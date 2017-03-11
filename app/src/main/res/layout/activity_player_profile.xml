@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="customlistview.wipro.topgear.com.customlist.PlayersDetailView">
+
+
+        <RelativeLayout
+            android:id="@+id/Image_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/PlayerImage"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:background="#ffffff"
+                android:layout_centerHorizontal="true"
+                android:padding="1dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/details_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@+id/Image_layout">
+
+            <TextView
+                android:id="@+id/playerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/player" />
+
+            <TextView
+                android:id="@+id/player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_toRightOf="@+id/playerLabel" />
+
+            <TextView
+                android:id="@+id/countrylabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_below="@+id/playerLabel"
+                android:text="@string/countrylabel" />
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_below="@+id/player"
+                android:layout_toRightOf="@+id/countrylabel" />
+
+            <TextView
+                android:id="@+id/agelabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_below="@+id/countrylabel"
+                android:text="@string/Agelabel" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_below="@+id/country"
+                android:layout_toRightOf="@+id/agelabel" />
+
+        </RelativeLayout>
+
+</RelativeLayout>
