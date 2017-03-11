@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Custom List</string>
+    <string name="player">"Player name      : "</string>
+    <string name="countrylabel">"Country name   : "</string>
+    <string name="Agelabel">"Age                     : "</string>
+</resources>
