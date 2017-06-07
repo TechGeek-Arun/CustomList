@@ -10,14 +10,15 @@ import android.widget.ListView;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-
-    // Declare Variables
+ // Declare Variables
     ListView list;
     CustomAdapter adapter;
     String[] player;
     String country;
     String[] age;
+    String[] quote;
     int[] player_image;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,9 +43,28 @@ public class MainActivity extends AppCompatActivity {
                 "Umesh Yadav"
         };
 
+        quote = new String[] {"Captian Cool",
+                        "Mr Perfect",
+                        "Game Changer",
+                        "Brick of wall",
+                        "Fast is Fast",
+                        "Spin at well also",
+                        "Desi Mustach",
+                        "Hitter",
+                        "Young blood",
+                        "knows only 200",
+                        "fast&furious",
+                        "carrom boy",
+                        "plays with Sword not with bat",
+                        "Test player for a reason",
+                        "Speedstar"
+        };
+
         country = "India";
 
         age = new String[] { "35" , "24","35","35" , "24","35","35" , "24","35","35" , "24","35","35" , "24","35" };
+
+
 
         player_image = new int[] { R.drawable.ms_dhoni,
                 R.drawable.virat_kohli,
@@ -66,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
         list = (ListView) findViewById(R.id.playerList);
 
         // Pass results to CustomAdapter Class
-        adapter = new CustomAdapter(this, player, country, age, player_image);
+        adapter = new CustomAdapter(this, player, country, age, player_image,quote);
         // Binds the Adapter to the ListView
         list.setAdapter(adapter);
         // Capture ListView item click
