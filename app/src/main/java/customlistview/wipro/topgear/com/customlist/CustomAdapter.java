@@ -10,21 +10,24 @@ import android.widget.TextView;
 
 public class CustomAdapter  extends BaseAdapter {
 
+  
     // Declare Variables
     Context context;
     String[] player;
     String country;
     String[] age;
+    String[] quote;
     int[] img;
     LayoutInflater inflater;
 
     public CustomAdapter(Context context, String[] player, String country,
-                           String[] age, int[] img) {
+                         String[] age, int[] img, String[] quote) {
         this.context = context;
         this.player = player;
         this.country = country;
         this.age = age;
         this.img = img;
+        this.quote = quote;
     }
 
     @Override
@@ -48,6 +51,7 @@ public class CustomAdapter  extends BaseAdapter {
         TextView txtPlayer;
         TextView txtCountry;
         TextView txtAge;
+        TextView txtQuote;
         ImageView imgPlayer;
 
         inflater = (LayoutInflater) context
@@ -59,14 +63,16 @@ public class CustomAdapter  extends BaseAdapter {
         txtPlayer = (TextView) itemView.findViewById(R.id.player);
         txtCountry = (TextView) itemView.findViewById(R.id.country);
         txtAge = (TextView) itemView.findViewById(R.id.age);
+        txtQuote=(TextView) itemView.findViewById(R.id.quote);
 
         // initialise ImageView in listview_item.xml
         imgPlayer = (ImageView) itemView.findViewById(R.id.PlayerImage);
 
         // Locate position and set to the TextViews
-        txtPlayer.setText(player[position]);
-        txtCountry.setText(country);
-        txtAge.setText(age[position]);
+       txtPlayer.setText(player[position]);
+        //txtCountry.setText(country);
+        //txtAge.setText(age[position]);
+        txtQuote.setText(quote[position]);
 
 
         // Locate position and set to the ImageView
