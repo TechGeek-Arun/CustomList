@@ -5,7 +5,7 @@
     android:paddingLeft="10dp">
 
 
-        <TextView
+         <TextView
             android:id="@+id/playerLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -19,37 +19,54 @@
             android:paddingTop="5dp"
             android:layout_toRightOf="@+id/playerLabel" />
 
-        <TextView
-            android:id="@+id/countrylabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/playerLabel"
-            android:paddingTop="5dp"
-            android:text="@string/countrylabel" />
+    <!--  <TextView
+       android:id="@+id/countrylabel"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/playerLabel"
+       android:paddingTop="5dp"
+       android:text="@string/countrylabel" />
 
-        <TextView
-            android:id="@+id/country"
-            android:paddingTop="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/player"
-            android:layout_toRightOf="@+id/countrylabel" />
+   <TextView
+       android:id="@+id/country"
+       android:paddingTop="5dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/player"
+       android:layout_toRightOf="@+id/countrylabel" />
 
-        <TextView
-            android:id="@+id/agelabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="5dp"
-            android:layout_below="@+id/countrylabel"
-            android:text="@string/Agelabel" />
+   <TextView
+       android:id="@+id/agelabel"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:paddingTop="5dp"
+       android:layout_below="@+id/countrylabel"
+       android:text="@string/Agelabel" />
 
-        <TextView
-            android:id="@+id/age"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="5dp"
-            android:layout_below="@+id/country"
-            android:layout_toRightOf="@+id/agelabel" />
+   <TextView
+       android:id="@+id/age"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:paddingTop="5dp"
+       android:layout_below="@+id/country"
+       android:layout_toRightOf="@+id/agelabel" />-->
+
+    <TextView
+        android:id="@+id/quotelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/playerLabel"
+        android:text="@string/QuoteLabel" />
+
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/playerLabel"
+        android:layout_toRightOf="@+id/quotelabel" />
 
         <ImageView
             android:id="@+id/PlayerImage"
