@@ -3,4 +3,5 @@
     <string name="player">"Player name      : "</string>
     <string name="countrylabel">"Country name   : "</string>
     <string name="Agelabel">"Age                     : "</string>
+      <string name="QuoteLabel">==> </string>   
 </resources>
